@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - a function that executes a function given as a parameter on each element of an array.
+ * array_iterator - a function that executes a function given as a parameter.
  * @array: array
  * @size: how many elements are to be printed
  * @action: pointer to print in regular or hex

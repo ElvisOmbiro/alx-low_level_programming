@@ -1,8 +1,8 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
- * main - a program that prints the number of arguments passed into it.
+ * main - a program that prints the number of arguments passed to the program
  * @argc: number of arguments
  * @argv: array of arguments
  *

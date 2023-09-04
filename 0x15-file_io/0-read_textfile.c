@@ -3,28 +3,28 @@
 #include <stdlib.h>
 
 /**
- * read_textfile- Read text file print to STDOUT.
+ * read_textfile- function that reads text file and prints it to POSIX stdout
  * @filename: text file being read
  * @letters: number of letters to be read
- * Return: w- actual number of bytes read and printed
+ * Return: k- actual number of bytes to be read and printed
  *        0 when function fails or filename is NULL.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char *buf;
-	ssize_t fd;
-	ssize_t w;
-	ssize_t t;
+	char *ruf;
+	ssize_t j;
+	ssize_t k;
+	ssize_t l;
 
-	fd = open(filename, O_RDONLY);
-	if (fd == -1)
+	j = open(filename, O_RDONLY);
+	if (j == -1)
 		return (0);
-	buf = malloc(sizeof(char) * letters);
-	t = read(fd, buf, letters);
-	w = write(STDOUT_FILENO, buf, t);
+	ruf = malloc(sizeof(char) * letters);
+	l = read(j, ruf, letters);
+	k = write(STDOUT_FILENO, ruf, l);
 
-	free(buf);
-	close(fd);
-	return (w);
+	free(ruf);
+	close(j);
+	return (k);
 }
 

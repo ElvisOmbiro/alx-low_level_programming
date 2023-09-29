@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * print_binary - a function that prints the binary representation of a number.
- * @n: number to be printed in binary
+ * print_binary - a function printing the binary representation of a number.
+ * @n: the number that is to be printed in binary
  */
 void print_binary(unsigned long int n)
 {
-	int k, count = 0;
+	int p, count = 0;
 	unsigned long int current;
 
-	for (k = 63; k >= 0; k--)
+	for (p = 63; p >= 0; p--)
 	{
-		current = n >> k;
+		current = n >> p;
 
 		if (current & 1)
 		{
